@@ -1,0 +1,11 @@
+/* Raghava Varma's personal stylesheet.
+   Edit this file to customize only raghava-varma.html.
+   Shared layout and base styles remain in styles.css. */
+
+body.raghava-profile .hero {
+  /* Add your personal hero-section styling here. */
+}
+
+body.raghava-profile .avatar {
+  /* Add your own avatar styling here. */
+}

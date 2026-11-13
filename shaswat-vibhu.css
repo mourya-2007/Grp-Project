@@ -1,0 +1,209 @@
+.shaswat-profile {
+    margin: 0;
+    background: #eeeae0;
+    color: #171717;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+.shaswat-profile header {
+    background: #eeeae0;
+    color: #171717;
+    padding: 25px 20px;
+    border-bottom: 2px solid #171717;
+    text-align: left;
+}
+
+.shaswat-profile header h1 {
+    font-size: 27px;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.shaswat-profile header p {
+    color: #777168;
+    font-size: 13px;
+}
+
+.shaswat-profile nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.shaswat-profile nav a {
+    color: #171717;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.shaswat-profile nav a:hover {
+    color: #e65c32;
+}
+.shaswat-profile main {
+    max-width: 1050px;
+    margin: 45px auto;
+    padding: 0 25px;
+}
+.shaswat-profile .back {
+    color: #e65c32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.shaswat-profile .hero {
+    background: #eeeae0;
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    border-bottom: 2px solid #171717;
+    margin-bottom: 35px;
+}
+
+.shaswat-profile .avatar,
+.shaswat-profile .profile-img {
+    width: 155px;
+    height: 175px;
+    min-width: 155px;
+    border-radius: 0;
+    object-fit: cover;
+    background: #e65c32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 900;
+    border: none;
+}
+
+.shaswat-profile .hero h1 {
+    font-size: clamp(30px, 5vw, 55px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin: 0 0 15px;
+    color: #171717;
+}
+.shaswat-profile .hero .muted {
+    color: #777168;
+    font-size: 14px;
+}
+.shaswat-profile .panel {
+    background: transparent;
+    padding: 25px 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #bcb6aa;
+    margin-bottom: 15px;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.shaswat-profile .panel:hover {
+    transform: translateX(5px);
+}
+
+.shaswat-profile .panel h2 {
+    color: #e65c32;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+.shaswat-profile .muted {
+    color: #666158;
+}
+.shaswat-profile .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.shaswat-profile .tag {
+    background: transparent;
+    color: #171717;
+    border: 1px solid #171717;
+    border-radius: 0;
+    padding: 8px 13px;
+    font-size: 13px;
+    transition: 0.25s;
+}
+
+.shaswat-profile .tag:hover {
+    background: #e65c32;
+    color: white;
+    border-color: #e65c32;
+}
+.shaswat-profile .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.shaswat-profile .project {
+    background: #ded8cb;
+    padding: 25px;
+    border-radius: 0;
+    border: none;
+    border-top: 4px solid #171717;
+    transition: 0.3s;
+}
+
+.shaswat-profile .project:hover {
+    background: #e65c32;
+    color: white;
+    transform: translateY(-5px);
+}
+.shaswat-profile .project h3 {
+    font-size: 21px;
+    color: #171717;
+}
+.shaswat-profile .project p {
+    font-size: 14px;
+    color: #555047;
+}
+.shaswat-profile .project:hover h3,
+.shaswat-profile .project:hover p {
+    color: white;
+}
+.shaswat-profile .goals {
+    padding-left: 20px;
+}
+
+.shaswat-profile .goals li {
+    padding: 6px 0;
+    color: #555047;
+}
+
+.shaswat-profile .goals li::marker {
+    color: #e65c32;
+}
+.shaswat-profile footer {
+    background: #171717;
+    color: #eeeae0;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+    .shaswat-profile .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .shaswat-profile .hero h1 {
+        font-size: 36px;
+    }
+    .shaswat-profile nav {
+        gap: 15px;
+    }
+    .shaswat-profile .avatar,
+    .shaswat-profile .profile-img {
+        width: 125px;
+        height: 145px;
+        min-width: 125px;
+    }
+}

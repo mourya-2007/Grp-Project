@@ -1,0 +1,11 @@
+/* Chandan Ganta's personal stylesheet.
+   Edit this file to customize only chandan-ganta.html.
+   Shared layout and base styles remain in styles.css. */
+
+body.chandan-profile .hero {
+  /* Add your personal hero-section styling here. */
+}
+
+body.chandan-profile .avatar {
+  /* Add your own avatar styling here. */
+}
