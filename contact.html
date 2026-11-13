@@ -1,65 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <link rel="stylesheet" href="styles.css">
-  <title>Contact | Student Profiles</title>
-
-</head>
-<body class="contact-page">
-  <header>
-    <h1>Contact the Team</h1>
-    <p>Connect with the students behind this project</p>
-    <nav>
-      <a href="profile.html">Profiles</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <p class="intro">Have a question or an idea to share? Explore the team members below or use the contact form template.</p>
-
-    <h2 class="section-title">Our Team</h2>
-    <section class="team" aria-label="Team members">
-      <article class="member"><div class="avatar">KM</div><h3>KABIR MUNI</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:kabirmuni22@gmail.com">Email</a><a href="https://github.com/KABIR200822" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
-      <article class="member"><div class="avatar">MMRV</div><h3>M.M RAGHAVA VARMA</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:mmrvarma07@gmail.com">Email</a><a href="https://github.com/mourya-2007" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
-      <article class="member"><div class="avatar">CG</div><h3>CHANDAN GANTA</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:chandanganta133@gmail.com">Email</a><a href="https://github.com/chandanganta" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
-      <article class="member"><div class="avatar">KS</div><h3>KARTHIK SWAMY</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:lowkeykarthik10@gmail.com">Email</a><a href="https://github.com/KARTHIKSWAMY10" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
-      <article class="member"><div class="avatar">SV</div><h3>SHASWAT VIBHU</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:shashwatvibhu01@gmail.com">Email</a><a href="https://github.com/shashwat-vibhu" target="_blank" rel="noopener noreferrer">GitHub</a></div></article>
-    </section>
-
-    <h2 class="section-title">Project Contact</h2>
-    <section class="contact-grid">
-      <article class="contact-card"><h3>Project</h3><p>Student Profile Website<br>Built with HTML, CSS, Git and GitHub.</p></article>
-      <article class="contact-card"><h3>Repository</h3><p>View the source code and project updates on GitHub.</p><p><a href="https://github.com/KABIR200822/WEB_DEV_PROJECT" target="_blank" rel="noopener noreferrer">Open project repository</a></p></article>
-      <article class="contact-card"><h3>Collaboration</h3><p>Use this page as a starting point for project questions, feedback and collaboration requests.</p></article>
-    </section>
-
-    <h2 class="section-title">Send a Message</h2>
-    <section class="form-card">
-      <form id="contact-form">
-        <label for="name">Your name</label>
-        <input id="name" name="name" type="text" placeholder="Enter your name" required>
-        <label for="email">Your email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-        <button type="submit">Preview message</button>
-        <p class="note">Demo form: this page does not send or store messages. A backend or email service must be connected to receive submissions.</p>
-        <p id="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer>&copy; 2026 Student Profile Repository</footer>
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value.trim();
-      document.getElementById("form-status").textContent =
-        "Message preview ready, " + name + ". This demo does not send the message.";
-    });
-  </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css"><title>Contact | Student Profiles</title></head><body class="contact-page"><header><h1>Get in touch</h1><p>Connect with the people behind the project</p><nav><a href="profile.html">Directory</a><a href="skills.html">Skills</a><a href="contact.html" aria-current="page">Contact</a></nav></header><main><p class="intro">Have a question, an idea or feedback? Find the right person and say hello.</p><h2 class="section-title">Meet the team</h2><section class="team" aria-label="Team members">
+<article class="member"><div class="avatar">KM</div><h3>Kabir Muni</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:kabirmuni22@gmail.com">Email</a><a href="https://github.com/KABIR200822" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+<article class="member"><div class="avatar">MMRV</div><h3>M. M. Raghava Varma</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:mmrvarma07@gmail.com">Email</a><a href="https://github.com/mourya-2007" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+<article class="member"><div class="avatar">CG</div><h3>Chandan Ganta</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:chandanganta133@gmail.com">Email</a><a href="https://github.com/chandanganta" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+<article class="member"><div class="avatar">KS</div><h3>Karthik Swamy</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:lowkeykarthik10@gmail.com">Email</a><a href="https://github.com/KARTHIKSWAMY10" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+<article class="member"><div class="avatar">SV</div><h3>Shaswat Vibhu</h3><p>AI &amp; ML Student</p><div class="member-links"><a href="mailto:shashwatvibhu01@gmail.com">Email</a><a href="https://github.com/shashwat-vibhu" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></article>
+</section><h2 class="section-title">Project information</h2><section class="contact-grid"><article class="contact-card"><h3>Student Profile Website</h3><p>A multi-page student portfolio built with HTML and CSS.</p></article><article class="contact-card"><h3>Source repository</h3><p>Explore the independent project repository and its updates.</p><p><a href="https://github.com/mourya-2007/Grp-Project" target="_blank" rel="noopener noreferrer">Open repository ↗</a></p></article><article class="contact-card"><h3>Collaboration</h3><p>Reach out to any team member using the contact links above.</p></article></section><h2 class="section-title">Message preview</h2><section class="form-card"><form action="mailto:mmrvarma07@gmail.com" method="post" enctype="text/plain"><label for="name">Your name</label><input id="name" name="Name" type="text" placeholder="Enter your name" required><label for="email">Your email</label><input id="email" name="Email" type="email" placeholder="you@example.com" required><label for="message">Message</label><textarea id="message" name="Message" placeholder="Write your message..." required></textarea><button type="submit">Open email draft ↗</button><p class="note">This HTML-only form opens your default email application. It does not send or store messages on this website.</p></form></section></main><footer>© 2026 · Student Profile Project</footer></body></html>

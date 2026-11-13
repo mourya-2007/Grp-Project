@@ -1,11 +1,1 @@
-/* Kabir's personal stylesheet.
-   Edit this file to customize only kabir.html.
-   Shared layout and base styles remain in styles.css. */
-
-body.kabir-profile .hero {
-  /* Example: border-top: 4px solid #2563eb; */
-}
-
-body.kabir-profile .avatar {
-  /* Add your own avatar styling here. */
-}
+/* Individual page customization is intentionally kept in the shared stylesheet. */
