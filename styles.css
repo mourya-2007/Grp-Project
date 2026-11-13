@@ -7,3 +7,97 @@
 @media(max-width:760px){header{border-radius:22px;padding:14px 17px}header h1{font-size:15px}header>p{max-width:58%}nav{margin:12px 0 0;justify-content:flex-start;gap:2px}nav a{padding:7px 10px;font-size:10px}main{margin:42px auto 65px}.directory-page main{margin-top:48px}.profiles{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:22px 18px;min-height:205px}.profile-page .hero{align-items:flex-start;padding:24px}.profile-page .panel{padding:22px}.intro{margin-bottom:30px}}
 @media(max-width:480px){.profiles{grid-template-columns:1fr}.card{min-height:0}.profile-page .hero{flex-direction:column}.profile-page .hero .avatar{width:76px;height:76px;flex-basis:76px}.team{grid-template-columns:repeat(2,minmax(0,1fr))}.member{padding:17px}.member-links{gap:5px}.member-links a{padding:6px 8px}th,td{padding:14px}.section-title{font-size:23px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Apple-inspired typography, neutral palette and liquid-glass navigation */
+:root{
+  --bg:#fff;
+  --surface:#fff;
+  --soft:#f5f5f7;
+  --text:#1d1d1f;
+  --muted:#6e6e73;
+  --line:#d2d2d7;
+  --accent:#0071e3;
+  --shadow:0 8px 28px rgba(0,0,0,.055);
+  color-scheme:light;
+}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  font-size:15px;
+  letter-spacing:-.01em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,h4{
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;
+  font-weight:650;
+  letter-spacing:-.035em;
+}
+header{
+  display:grid;
+  grid-template-columns:minmax(160px,1fr) auto;
+  align-items:center;
+  gap:3px 20px;
+  position:sticky;
+  top:12px;
+  width:min(1160px,calc(100% - 36px));
+  margin:12px auto 0;
+  padding:12px 18px;
+  border:1px solid rgba(255,255,255,.72);
+  border-radius:22px;
+  background:rgba(255,255,255,.68);
+  color:var(--text);
+  box-shadow:0 8px 32px rgba(0,0,0,.075),inset 0 1px 0 rgba(255,255,255,.9);
+  -webkit-backdrop-filter:blur(28px) saturate(190%);
+  backdrop-filter:blur(28px) saturate(190%);
+  text-align:left;
+  isolation:isolate;
+}
+header h1{grid-column:1;grid-row:1;font-size:16px;font-weight:650;letter-spacing:-.025em;margin:0}
+header>p{grid-column:1;grid-row:2;color:var(--muted);font-size:11px;line-height:1.35;margin:1px 0 0}
+nav{grid-column:2;grid-row:1 / span 2;display:flex;justify-content:flex-end;align-items:center;gap:4px;flex-wrap:wrap;margin:0}
+nav a{
+  padding:8px 13px;
+  border-radius:999px;
+  color:#424245;
+  font-size:12px;
+  line-height:1;
+  font-weight:550;
+  text-decoration:none;
+  transition:background .22s ease,color .22s ease,transform .22s ease;
+}
+nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{
+  background:rgba(0,0,0,.055);
+  color:#1d1d1f;
+  outline:none;
+}
+nav a:active{transform:scale(.97)}
+a{transition-color:.2s}
+.card,.member,.contact-card,.form-card,.table-wrap,.profile-page .hero,.profile-page .panel{
+  border-color:var(--line);
+  box-shadow:var(--shadow);
+}
+.directory-page main:before{color:var(--muted);letter-spacing:2.2px}
+.directory-page .intro{font-family:inherit;font-weight:650;letter-spacing:-.045em}
+.avatar{background:#f5f5f7;color:#1d1d1f}
+.tag{background:#f5f5f7;color:#424245;border-color:#e8e8ed}
+.view-profile,.back{color:#06c}
+.member-links a:hover{background:#f5f5f7}
+input,textarea{font-family:inherit;border-color:#d2d2d7}
+button{background:#0071e3;color:#fff;font-family:inherit}
+button:hover{background:#0077ed}
+footer{color:#86868b}
+@media(max-width:760px){
+  header{grid-template-columns:1fr;border-radius:20px;padding:13px 15px;gap:8px}
+  header h1,header>p,nav{grid-column:1}
+  header h1{grid-row:1}
+  header>p{grid-row:2;max-width:none}
+  nav{grid-row:3;justify-content:flex-start;margin-top:3px}
+  nav a{padding:8px 11px;font-size:11px}
+}
+@media(prefers-reduced-transparency:reduce){
+  header{background:rgba(255,255,255,.96);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
